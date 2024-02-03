@@ -45,16 +45,22 @@ main {
   &:nth-child(3) {
     left: 60%;
     opacity: 0.5;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
   }
 
   &:nth-child(4) {
     left: calc(60% + 220px);
     opacity: 0.5;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
   }
 
   &:nth-child(5) {
     left: calc(60% + 440px);
     opacity: 0.5;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
   }
 
   &:nth-child(6) {
