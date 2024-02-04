@@ -76,24 +76,6 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * links - (_document-setup) 
- * ------------------------------------------------------------------- */
-a,
-a:visited {
-  color: #07617d;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover,
-a:focus {
-  color: #000000;
-}
-
 
 /* ===================================================================
  *  03. typography & general theme styles - (_document-setup.scss) 
@@ -168,7 +150,8 @@ h4,
 
 h5,
 .h05 {
-  font-size: 1.4rem;
+  font-size: 3rem;
+  color: #ffffff;
   line-height: 1.7;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -193,6 +176,8 @@ p.lead {
   color: #4f4f4f;
   margin-bottom: 3.6rem;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   p.lead {
@@ -1651,6 +1636,7 @@ header .header-logo a img {
  * ------------------------------------------------------------------- */
 main {
   position: relative;
+  overflow: hidden;
 }
 
 main .overlay {
@@ -2087,7 +2073,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 
 /* ===================================================================
- *  12. services - (_layout.scss)
+ *  12. services - Bots (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 #services {
@@ -2196,7 +2182,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 /* ===================================================================
- *  14. newsletter - (_layout.scss)
+ *  13. newsletter - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 #newsletter {
@@ -2271,6 +2257,42 @@ h3.newsletter-title {
 
 
 /* ===================================================================
+ *  14. Blog - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#blog {
+  background: #000000;
+  padding: 4rem 0 12rem;
+  text-align: center;
+}
+
+#blog h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  line-height: 1.667;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+
+#blog p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+#blog h3::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 9.6rem;
+  background-color: rgba(255, 255, 255, 0.993);
+  margin: 0 auto 2.4rem;
+}
+
+
+/* ===================================================================
  *  15. Memories - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
@@ -2317,15 +2339,11 @@ h3.newsletter-title {
 
 #contact .section-intro h1 {
   color: white;
+  font-style: normal !important;
+  font-family: Raleway, sans-serif;
+  ;
 }
 
-#contact .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
-}
-
-#contact .section-intro p.lead {
-  color: rgba(242, 242, 242, 0.4);
-}
 
 .contact-content {
   max-width: 1024px;
@@ -2465,6 +2483,11 @@ div.btn-aboutUs {
   transition: opacity 0.5s;
 }
 
+div.btn-aboutUs a {
+  z-index: 9;
+  margin-bottom: 30px;
+}
+
 div:hover.btn-aboutUs {
   opacity: 0.5;
 }
@@ -2535,6 +2558,16 @@ button.aboutUs {
 
 .oldie #submit-loader .text-loader {
   display: block;
+}
+
+a,
+a:visited {
+  color: #ffffff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* --------------------------------------------------------------- 
@@ -2669,23 +2702,14 @@ footer .row {
   max-width: 1024px;
 }
 
-footer h4.h05 {
+footer h3.h05 {
   color: #FFFFFF;
   position: relative;
+  font-size: 3rem;
   padding-bottom: 4.2rem;
   margin-bottom: 3.6rem;
 }
 
-footer h4.h05::after {
-  display: block;
-  content: "";
-  width: 100px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 
 /* footer main
  * --------------------------------- */
@@ -2764,10 +2788,10 @@ footer h4.h05::after {
 /* footer bottom
  * --------------------------------- */
 .footer-bottom {
-  margin-top: 3rem;
   text-align: center;
   font-family: 'Raleway', sans-serif, sans-serif;
   font-size: 1.4rem;
+  height: 50px;
 }
 
 .footer-bottom .copyright span {
@@ -2826,6 +2850,39 @@ footer h4.h05::after {
 #go-top a:focus {
   background: #000000;
   color: #FFFFFF;
+}
+
+/* home social-list */
+.footer-social-list {
+  display: flex;
+  gap: 30px;
+  left: 30px;
+  bottom: 54px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.75;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.footer-social-list li i {
+  padding-left: 0;
+  font-size: 3rem !important;
+  margin: 10px 0;
+}
+
+
+.footer-social-list li a,
+.footer-social-list li a:visited {
+  color: #FFFFFF;
+}
+
+.footer-social-list li a:hover,
+.footer-social-list li a:focus,
+.footer-social-list li a:active {
+  color: #3EC1D5;
 }
 
 /* ------------------------------------------------------------------- 

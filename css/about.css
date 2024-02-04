@@ -1,0 +1,28 @@
+#about-hero {
+    background-image: url("/images/about/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#about-subtitle {
+    text-align: left;
+    font-size: 25px !important;
+    margin-top: 30px;
+}
+
+p.lead-about {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #4f4f4f;
+    margin-bottom: 3.6rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+#lead-about {
+    font-weight: 900;
+    color: #4f4f4f !important;
+}

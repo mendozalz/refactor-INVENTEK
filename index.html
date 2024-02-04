@@ -9,50 +9,61 @@
 	<!--- basic page needs
    ================================================== -->
 	<meta charset="utf-8">
-	<title>INVENTEK</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<!-- mobile specific metas
-   ================================================== -->
+		================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
-   ================================================== -->
+			================================================== -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- CSS Animaciones
-   ================================================== -->
+		================================================== -->
 
 	<link rel="stylesheet" href="/css/style-card/splitting.css">
 	<link rel="stylesheet" href="/css/style-card/splittting-cells.css">
 	<link rel="stylesheet" href="/css/style-card/style-card.css">
 
+	<!-- CSS Blog Slider
+			================================================== -->
+
+	<link rel="stylesheet" href="/css/blog/style-blog-card.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<!-- script
-   ================================================== -->
+				================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script src="https://kit.fontawesome.com/1a4ceee562.js" crossorigin="anonymous"></script>
 
 	<!-- favicons
-	================================================== -->
+					================================================== -->
 	<link rel="shortcut icon" href="/images/inventek/imagotipo.ico" type="image/x-icon">
 	<link rel="icon" href="/images/inventek/imagotipo.ico" type="image/x-icon">
 
+	<title>Inventek</title>
 </head>
 
 <body id="top">
+	<!-- effectMouse -->
+	<div id="effectMouse"></div>
+
+	<!-- Fin effectMouse -->
 
 	<!-- header 
-   ================================================== -->
+						================================================== -->
 	<header>
 
 		<div class="header-logo">
 			<!-- <a href="index.html">Infinity</a> -->
-			<a href="">
+			<a href="/">
 				<img src="./images/inventek/logotipo.png" alt="logotipo inventek">
 			</a>
 		</div>
@@ -72,8 +83,8 @@
 				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
 				<li><a class="smoothscroll" href="#about" title="">About</a></li>
 				<li><a class="smoothscroll" href="#services" title="">Our Bots</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">News And Articles</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Newsletter</a></li>
+				<li><a class="smoothscroll" href="#blog" title="">News And Articles</a></li>
+				<li><a class="smoothscroll" href="#newsletter" title="">Newsletter</a></li>
 				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
 			</ul>
 
@@ -96,7 +107,7 @@
 
 	<!-- hero
    ================================================== -->
-	<main>
+	<main id="home">
 		<div class='slider'>
 			<div class='item' style="background-image: url('./images/inventek/innovation_slider_ligera.jpg')">
 				<div class="overlay"></div>
@@ -204,7 +215,7 @@
 						achieve their financial goals through automated trading, thus increasing consistency and
 						profitability.</p>
 				</div>
-				<div class="btn-aboutUs"><a href="/Pages/About_Us">
+				<div class="btn-aboutUs"><a href="/about.html">
 						<button class="aboutUs">Read more</button>
 					</a>
 				</div>
@@ -348,13 +359,18 @@
 
 		</section>
 		<!-- Fin animación -->
+		<div class="btn-aboutUs">
+			<a href="/about.html">
+				<button class="aboutUs">Read more</button>
+			</a>
+		</div>
 
 	</section> <!-- end services -->
 
 
 	<!-- Fin portafolio of bots -->
 
-	<!-- Testimonials Section
+	<!-- Newsletter
    ================================================== -->
 	<section id="newsletter">
 
@@ -378,10 +394,85 @@
 		</div>
 
 
-	</section> <!-- end testimonials -->
+	</section>
+
+	<!-- end newsletter -->
+
+	<!-- Blog
+   ================================================== -->
+	<section id="blog">
+
+		<div class="blog-container">
+
+			<div class="row narrow section-intro with-bottom-sep animate-this">
+				<div class="intro">
+					<h3 class="blog-title">Latest News And Articles</h3>
+				</div>
+			</div> <!-- end row -->
+
+			<div class="blog-slider">
+				<div class="blog-slider__wrp swiper-wrapper">
+					<div class="blog-slider__item swiper-slide">
+						<div class="blog-slider__img">
+
+							<img src="https://inbot.info/img/el_activo_comun.jpg" alt="">
+						</div>
+						<div class="blog-slider__content">
+							<span class="blog-slider__code">01 July 2020 | Dr. Jaime Marulanda</span>
+							<div class="blog-slider__title">El Activo Común: La Información</div>
+							<div class="blog-slider__text">Toda empresa comprarte un activo que es indispensable no solo
+								en la toma de decisiones, sino en la posibilidad de competir en el mundo globalizado.
+								Dicho activo marca la diferencia entre una empresa que quedara en el pasado, y una con
+								la estructura para </div>
+							<a href="#" class="blog-slider__button">READ ARTICLE</a>
+						</div>
+					</div>
+					<div class="blog-slider__item swiper-slide">
+						<div class="blog-slider__img">
+							<img src="https://inbot.info/img/tecnologia_y_seguridad.jpg" alt="">
+						</div>
+						<div class="blog-slider__content">
+							<span class="blog-slider__code">01 March 2020 | Dr. Jaime Marulanda</span>
+							<div class="blog-slider__title">Formas en que la IA Está Afectando la Industria de Seguridad
+							</div>
+							<div class="blog-slider__text">La inteligencia artificial está evolucionando prácticamente
+								todas las industrias. En específico, sus avances en ciberseguridad están revolucionando
+								como las empresas se protegen de hackers y amenazas cibernéticas.</div>
+							<a href="#" class="blog-slider__button">READ ARTICLE</a>
+						</div>
+					</div>
+
+					<div class="blog-slider__item swiper-slide">
+						<div class="blog-slider__img">
+							<img src="https://inbot.info/img/tecnologia_e_innovacion.jpg" alt="">
+						</div>
+						<div class="blog-slider__content">
+							<span class="blog-slider__code">01 January 2020 | Dr. Jaime Marulanda</span>
+							<div class="blog-slider__title">Tecnología e Innovación</div>
+							<div class="blog-slider__text">La implementación tecnología y la innovación son conceptos
+								críticos para todas las empresas, especialmente las PYMES. Estas deben aprender a ser
+								adaptables, creando una cultura propicia para la innovación.</div>
+							<a href="#" class="blog-slider__button">READ ARTICLE</a>
+						</div>
+					</div>
+
+				</div>
+				<a class="blog-anchor" href="#">
+					<h2>All News and Articles</h2>
+				</a>
+				<div class="blog-slider__pagination"></div>
+			</div>
 
 
-	<!-- stats
+		</div>
+
+
+	</section>
+
+	<!-- end blog -->
+
+
+	<!-- Memories
    ================================================== -->
 	<section id="memories">
 
@@ -394,10 +485,10 @@
 						Jaime Marulanda</h3>
 				</div>
 
-			</div> <!-- end col-twelve -->
-		</div> <!-- end row -->
-
-	</section> <!-- end clients -->
+			</div>
+		</div>
+	</section>
+	<!-- end memorries -->
 
 
 	<!-- contact
@@ -408,12 +499,7 @@
 
 		<div class="row narrow section-intro with-bottom-sep animate-this">
 			<div class="col-twelve">
-				<h3>Contact</h3>
-				<h1>Get In Touch.</h1>
-
-				<p class="lead">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat,
-					accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+				<h1>Contact Us</h1>
 			</div>
 		</div> <!-- end section-intro -->
 
@@ -483,26 +569,22 @@
 				<div class="cinfo">
 					<h6>Where to Find Us</h6>
 					<p>
-						1600 Amphitheatre Parkway<br>
-						Mountain View, CA<br>
-						94043 US
+						West Palm Beach, FL, USA<br>
+						Envigado, Antioquia, Colombia<br>
 					</p>
 				</div> <!-- end cinfo -->
 
 				<div class="cinfo">
 					<h6>Email Us At</h6>
 					<p>
-						someone@infinitysite.com<br>
-						info@infinitysite.com
+						<a class="mailto" href="mailto:drj@drjinnovations.com">drj@drjinnovations.com</a>
 					</p>
 				</div> <!-- end cinfo -->
 
 				<div class="cinfo">
 					<h6>Call Us At</h6>
 					<p>
-						Phone: (+63) 555 1212<br>
-						Mobile: (+63) 555 0100<br>
-						Fax: (+63) 555 0101
+						Whatsapp: (+1)-561-530-8396<br>
 					</p>
 				</div>
 
@@ -522,12 +604,7 @@
 
 				<div class="col-five tab-full footer-about">
 
-					<h4 class="h05">Infinity.</h4>
-
-					<p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent
-						sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget
-						tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
-						tincidunt. Proin eget tortor risus.</p>
+					<h3 class="h05">Inventek Investment <br><span>Group, Inc.</span></h3>
 
 				</div> <!-- end footer-about -->
 
@@ -535,39 +612,26 @@
 
 					<h4 class="h05">Follow Us.</h4>
 
-					<ul class="list-links">
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Behance</a></li>
-						<li><a href="#">Dribble</a></li>
-					</ul>
+					<ul class="footer-social-list">
+						<li class="animate-intro">
+							<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+						</li>
+						<li class="animate-intro">
+							<a href="#"><i class="fa-brands fa-youtube"></i></a>
+						</li>
+						<li class="animate-intro">
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						</li>
+						<li class="animate-intro">
+							<a href="#"><i class="">&nbsp;</i></a>
+						</li>
+						<li class="animate-intro">
+							<a href="#"><i class="">&nbsp;</i></a>
+						</li>
+					</ul> <!-- end home-social-list -->
 
 				</div> <!-- end footer-social -->
 
-				<div class="col-four tab-full footer-subscribe end">
-
-					<h4 class="h05">Get Notified.</h4>
-
-					<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa.</p>
-
-					<div class="subscribe-form">
-
-						<form id="mc-form" class="group" novalidate="true">
-
-							<input type="email" value="" name="dEmail" class="email" id="mc-email"
-								placeholder="type email" required="">
-
-							<!-- <input type="submit" name="subscribe" > -->
-							<button><i class="icon-mail"></i></button>
-
-							<label for="mc-email" class="subscribe-message"></label>
-
-						</form>
-
-					</div>
-
-				</div> <!-- end footer-subscribe -->
 
 			</div> <!-- end row -->
 
@@ -579,8 +643,8 @@
 
 				<div class="col-twelve">
 					<div class="copyright">
-						<span>© Copyright Infinity 2016.</span>
-						<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+						<span>© Copyright INVENTEK 2024.</span>
+						<span>Design by <a href="https://mendozalz.vercel.app/" target="_blank">mendozalz</a></span>
 					</div>
 				</div>
 
@@ -607,6 +671,11 @@
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+	<!-- Java Mouse Animaciones
+   ================================================== -->
+
+	<script src="/js/cursor.js"></script>
+
 	<!-- Java Script Animaciones
    ================================================== -->
 
@@ -615,6 +684,12 @@
 	<script src="/js/animaciones-card/gsap.min.js"></script>
 	<script src="/js/animaciones-card/splitting.min.js"></script>
 	<script src="/js/animaciones-card/utils.js"></script>
+
+	<!-- Blog slider -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+	<script src="/js/blog/blog-card.js"></script>
 
 </body>
 
