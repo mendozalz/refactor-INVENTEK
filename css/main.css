@@ -91,7 +91,6 @@ h6,
 .h02,
 .h03,
 .h04,
-.h05,
 .h06 {
   font-family: 'Raleway', sans-serif;
   color: #151515;
@@ -1951,12 +1950,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #about .about-wrap {
-  max-width: 850px;
+  max-width: 900px;
 }
 
-#about span {
-  color: #07617d;
-}
 
 #about h3 {
   font-family: 'Raleway', sans-serif;
@@ -2219,9 +2215,6 @@ h3.newsletter-title {
   background-color: rgb(62, 193, 213);
 }
 
-#newsletter-form button:hover {
-  opacity: 0.5;
-}
 
 
 
@@ -2480,16 +2473,11 @@ div.btn-aboutUs {
   height: auto;
   display: flex;
   justify-content: center;
-  transition: opacity 0.5s;
 }
 
 div.btn-aboutUs a {
   z-index: 9;
   margin-bottom: 30px;
-}
-
-div:hover.btn-aboutUs {
-  opacity: 0.5;
 }
 
 button.aboutUs {
@@ -2702,12 +2690,10 @@ footer .row {
   max-width: 1024px;
 }
 
-footer h3.h05 {
-  color: #FFFFFF;
-  position: relative;
+h4.footer-h04 {
+  color: #ffffff;
   font-size: 3rem;
-  padding-bottom: 4.2rem;
-  margin-bottom: 3.6rem;
+  margin-bottom: 0;
 }
 
 
@@ -2834,11 +2820,19 @@ footer h3.h05 {
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 9999;
+  position: relative;
 }
 
 #go-top a i {
   font-size: 1.7rem;
   line-height: inherit;
+  z-index: 9;
+  position: relative;
+}
+
+i.fa.fa-long-arrow-up {
+  z-index: 9;
 }
 
 #go-top a:visited {
@@ -2907,14 +2901,16 @@ footer h3.h05 {
     margin-bottom: 3.6rem;
   }
 
-  footer h4.h05 {
+  footer h4.footer-h4 {
     padding-bottom: 3rem;
     margin-bottom: 3rem;
+    margin-bottom: 0 !important;
   }
 
-  footer h4.h05::after {
+  footer h4.footer-h4::after {
     left: 50%;
     margin-left: -50px;
+    margin-bottom: 0 !important;
   }
 }
 

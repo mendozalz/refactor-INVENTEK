@@ -1,0 +1,268 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+#overlay {
+    opacity: .5;
+    background-color: #19191b;
+}
+
+.title {
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    position: relative;
+    text-align: center;
+    width: 60%;
+    z-index: 9;
+    color: #ffffff;
+    font-size: 6rem;
+}
+
+.title h2 {
+    position: relative;
+    z-index: 9;
+    color: #ffffff;
+}
+
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.snap-item {
+    scroll-snap-align: start;
+}
+
+.blog-main {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#blog {
+    position: relative;
+    padding: 8rem 0;
+    background-color: #FFFFFF;
+    min-height: 650px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#blog .blog-wrap {
+    max-width: 900px;
+}
+
+
+#blog h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    line-height: 1.667;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    position: relative;
+    text-align: left;
+}
+
+#blog h3::before {
+    content: none;
+}
+
+#blog h4 {
+    color: #444444;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+strong {
+    color: #444444;
+    width: 100%;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+
+a#enlace-blog {
+    color: #444444;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+b#important-blog {
+    color: #444444;
+    font-weight: 400;
+}
+
+#blog p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #444444;
+    margin-top: 4rem;
+    text-align: left;
+    text-wrap: pretty;
+}
+
+/* ------------------------------------------------------------------- 
+   * responsive:
+   * blog 
+   * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+    #blog {
+        min-height: 636px;
+    }
+
+    #blog .blog-wrap {
+        max-width: 800px;
+    }
+
+    #blog .lead {
+        font-size: 3.8rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #blog .blog-wrap {
+        max-width: 720px;
+    }
+
+    #blog .lead {
+        font-size: 3.6rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #blog h3 {
+        font-size: 1.7rem;
+    }
+
+    #blog .blog-wrap {
+        max-width: 600px;
+    }
+
+    #blog .lead {
+        font-size: 3.1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #blog {
+        min-height: auto;
+    }
+
+    #blog .blog-wrap {
+        max-width: 500px;
+    }
+
+    #blog .lead {
+        margin-top: 4.8rem;
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #blog h3 {
+        font-size: 1.5rem;
+    }
+
+    #blog .lead {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #blog {
+        padding: 4.2rem 0 9.6rem;
+    }
+
+    #blog .blog-wrap {
+        max-width: 380px;
+    }
+
+    #blog .lead {
+        font-size: 2.3rem;
+    }
+}
+
+/* Return */
+
+#return {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    right: 32px;
+    top: 30px;
+    height: auto;
+    width: -1px;
+    line-height: 42px;
+    font-family: 'Raleway', sans-serif, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: rgb(255, 255, 255);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a#return {
+    background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
+    background-size: 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.9rem;
+    font-family: 'Raleway', sans-serif, sans-serif;
+    font-weight: 200;
+    filter: drop-shadow(0 0 1px rgba(255, 200, 0, .3));
+    animation: MoveBackgroundPosition 6s ease-in-out infinite;
+}
+
+@keyframes MoveBackgroundPosition {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* effectMouse */
+
+#effectMouse {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    background-color: #444444;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transform: translateX(0) translateY(0) scale(0);
+    transition: transform 0.2s;
+    z-index: 1111111;
+    pointer-events: none;
+
+}

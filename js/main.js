@@ -161,7 +161,7 @@
 
   /* Smooth Scrolling
    * ------------------------------------------------------ */
-  /* var ssSmoothScroll = function () {
+  var ssSmoothScroll = function () {
     $(".smoothscroll").on("click", function (e) {
       var target = this.hash,
         $target = $(target);
@@ -187,42 +187,6 @@
 
           window.location.hash = target;
         });
-    });
-  }; */
-
-  var ssSmoothScroll = function () {
-    $(".smoothscroll").on("click", function (e) {
-      var target = this.hash,
-        $target = $(target);
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      // Verificar si $target es indefinido antes de intentar acceder a su propiedad 'offset'
-      if ($target && $target.offset() && $target.offset().top) {
-        $("html, body")
-          .stop()
-          .animate(
-            {
-              scrollTop: $target.offset().top,
-            },
-            cfg.scrollDuration,
-            "swing"
-          )
-          .promise()
-          .done(function () {
-            // Verificar si el menú está abierto antes de cerrarlo
-            if ($("body").hasClass("menu-is-open")) {
-              $("#header-menu-trigger").trigger("click");
-            }
-
-            window.location.hash = target;
-          });
-      } else {
-        console.error(
-          "El elemento 'target' es indefinido o no tiene la propiedad 'offset'"
-        );
-      }
     });
   };
 
@@ -425,10 +389,3 @@ function activate(e) {
 }
 
 document.addEventListener("click", activate, true);
-
-/* document.addEventListener("DOMContentLoaded", () => {
-  setInterval(() => {
-    document.querySelector(".next").click();
-  }, 5000);
-});
- */

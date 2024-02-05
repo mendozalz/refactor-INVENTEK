@@ -211,9 +211,6 @@
     transition-delay: 0.1s !important;
 }
 
-.blog-slider__button:hover {
-    opacity: 0.5 !important;
-}
 
 @media screen and (max-width: 576px) {
     .blog-slider__button {
