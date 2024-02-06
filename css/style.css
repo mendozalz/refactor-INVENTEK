@@ -152,12 +152,14 @@ main {
 
 @media (width > 650px) and (width < 900px) {
   .content {
+    width: 75%;
+
     & .title {
-      font-size: 1rem;
+      font-size: 3rem;
     }
 
     & .description {
-      font-size: 0.7rem;
+      font-size: 2rem;
     }
 
     & button {
@@ -170,19 +172,19 @@ main {
     height: 270px;
 
     &:nth-child(3) {
-      left: 50%;
+      left: 70%;
     }
 
     &:nth-child(4) {
-      left: calc(50% + 170px);
+      left: calc(70% + 170px);
     }
 
     &:nth-child(5) {
-      left: calc(50% + 340px);
+      left: calc(70% + 340px);
     }
 
     &:nth-child(6) {
-      left: calc(50% + 510px);
+      left: calc(70% + 510px);
       opacity: 0;
     }
   }
@@ -190,12 +192,14 @@ main {
 
 @media (width < 650px) {
   .content {
+    width: 85%;
+
     & .title {
-      font-size: 0.9rem;
+      font-size: 1.7rem;
     }
 
     & .description {
-      font-size: 0.65rem;
+      font-size: 1.5rem;
     }
 
     & button {
@@ -208,19 +212,19 @@ main {
     height: 220px;
 
     &:nth-child(3) {
-      left: 50%;
+      left: 70%;
     }
 
     &:nth-child(4) {
-      left: calc(50% + 140px);
+      left: calc(70% + 140px);
     }
 
     &:nth-child(5) {
-      left: calc(50% + 280px);
+      left: calc(70% + 280px);
     }
 
     &:nth-child(6) {
-      left: calc(50% + 420px);
+      left: calc(70% + 420px);
       opacity: 0;
     }
   }

@@ -70,7 +70,7 @@ body {
   background: #111111;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
-  line-height: 3rem;
+  line-height: 2rem;
   color: #353535;
   margin: 0;
   padding: 0;
@@ -881,13 +881,13 @@ input::-moz-focus-inner {
  * alert box - (_alert-box.scss)
  * -------------------------------------------------------------------
  */
-.alert-box {
+/* .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
   margin-bottom: 3rem;
   border-radius: 3px;
   font-family: 'Raleway', sans-serif, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .alert-box .close {
@@ -916,13 +916,13 @@ input::-moz-focus-inner {
   background-color: #fff099;
   color: #bba31b;
 }
-
+ */
 /* ------------------------------------------------------------------- 
  * additional typo styles - (_additional-typo.scss)
  * ------------------------------------------------------------------- */
 /* drop cap 
  * ----------------------------------------------- */
-.drop-cap:first-letter {
+/* .drop-cap:first-letter {
   float: left;
   margin: 0;
   padding: 1.5rem .6rem 0 0;
@@ -936,6 +936,7 @@ input::-moz-focus-inner {
 
 /* line definition style 
  * ----------------------------------------------- */
+/* 
 .lining dt,
 .lining dd {
   display: inline;
@@ -960,10 +961,10 @@ input::-moz-focus-inner {
   content: ": ";
   margin-left: -0.2em;
 }
-
+  */
 /* dictionary definition style 
  * ----------------------------------------------- */
-.dictionary-style dt {
+/* .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
 }
@@ -980,7 +981,7 @@ input::-moz-focus-inner {
 
 .dictionary-style dd:before {
   content: counter(definitions, decimal) ". ";
-}
+} */
 
 /** 
  * Pull Quotes
@@ -994,7 +995,7 @@ input::-moz-focus-inner {
  *	</aside>
  *
  * --------------------------------------------------------------------- */
-.pull-quote {
+/* .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
 }
@@ -1027,7 +1028,7 @@ input::-moz-focus-inner {
 .pull-quote blockquote:before {
   content: none;
 }
-
+ */
 /** 
  * Stats Tab
  * ---------
@@ -1040,6 +1041,7 @@ input::-moz-focus-inner {
  * Extend this object into your markup.
  *
  * --------------------------------------------------------------------- */
+/* 
 .stats-tabs {
   padding: 0;
   margin: 3rem 0;
@@ -1076,12 +1078,13 @@ input::-moz-focus-inner {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif, sans-serif;
   color: #4f4f4f;
-}
+} */
 
 /**
  * skillbars - (_skillbars.scss)
  * -------------------------------------------------------------------
  */
+/* 
 .skill-bars {
   list-style: none;
   margin: 6rem 0 3rem;
@@ -1104,7 +1107,7 @@ input::-moz-focus-inner {
   color: #313131;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -1218,7 +1221,7 @@ input::-moz-focus-inner {
 .skill-bars li .percent100 {
   width: 100%;
 }
-
+ */
 /* ===================================================================
  *  08. common and reusable styles 
  *
@@ -1238,7 +1241,7 @@ input::-moz-focus-inner {
 
 .section-intro h3 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.8 rem;
+  font-size: 1.8rem;
   line-height: 1.667;
   color: rgba(242, 242, 242, 0.5);
   text-transform: uppercase;
@@ -1295,7 +1298,7 @@ input::-moz-focus-inner {
 
 @media only screen and (max-width: 500px) {
   .section-intro h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1455,7 +1458,7 @@ header .header-logo a img {
 #menu-nav-wrap {
   background: #0C0C0C;
   color: rgba(255, 255, 255, 0.25);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   padding: 3.6rem 3rem;
   height: 100%;
@@ -1778,6 +1781,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   animation: animate-it 3s ease infinite;
 }
 
+a.scroll-icon.smoothscroll.effect {
+  display: flex;
+}
+
 /* vertical animation */
 @-webkit-keyframes animate-it {
 
@@ -1899,7 +1906,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 
   .home-content-tablecell h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .home-content-tablecell h1 {
@@ -1966,7 +1973,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #about h4 {
   color: #444444;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 #about h3::before {
@@ -1999,8 +2006,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     max-width: 800px;
   }
 
+  #about h3 {
+    font-size: 3rem;
+  }
+
   #about .lead {
-    font-size: 3.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2010,13 +2021,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 
   #about .lead {
-    font-size: 3.6rem;
+    font-size: 1.6rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   #about h3 {
-    font-size: 1.7rem;
+    font-size: 3rem;
+  }
+
+  #about h4 {
+    font-size: 2rem;
   }
 
   #about .about-wrap {
@@ -2024,11 +2039,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 
   #about .lead {
-    font-size: 3.1rem;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   #about {
     min-height: auto;
   }
@@ -2037,19 +2053,32 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     max-width: 500px;
   }
 
+  #about h3 {
+    font-size: 1.7rem;
+  }
+
+  #about h3::before {
+    height: 5rem;
+  }
+
+
+  #about h4 {
+    font-size: 1.6rem;
+  }
+
   #about .lead {
     margin-top: 4.8rem;
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   #about h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   #about .lead {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2063,7 +2092,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 
   #about .lead {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2145,7 +2174,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 @media only screen and (max-width: 768px) {
   #services {
-    padding: 12rem 0 12rem;
+    padding: 5rem 0;
   }
 
   #services .services-content {
@@ -2169,6 +2198,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #services .services-list .icon i {
     font-size: 5rem;
   }
+
+  #services h3 {
+    font-size: 1.7rem;
+  }
+
+  #services h3::before {
+    height: 5rem;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -2223,10 +2261,46 @@ h3.newsletter-title {
  * testimonials
  * ------------------------------------------------------------------- */
 
+@media only screen and (max-width: 900px) {
+  #newsletter-form input {
+    width: 50%;
+  }
+
+  p.newsletter-p {
+    margin: 20px 30px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  #newsletter h2 {
+  #newsletter h3 {
     font-size: 1.7rem;
   }
+
+  p.newsletter-p {
+    margin: 20px 10px;
+  }
+
+  #newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #newsletter-form input {
+    margin: 0;
+    width: 90%;
+  }
+
+  #newsletter-form button {
+    margin: 0;
+    padding: 0 50px;
+    height: 60px;
+    background-color: rgb(62, 193, 213);
+    width: 90%;
+    margin-top: 10px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -2236,11 +2310,6 @@ h3.newsletter-title {
 
 }
 
-@media only screen and (max-width: 500px) {
-  #newsletter h2 {
-    font-size: 1.5rem;
-  }
-}
 
 @media only screen and (max-width: 400px) {
   #newsletter .flex-container {
@@ -2284,6 +2353,15 @@ h3.newsletter-title {
   margin: 0 auto 2.4rem;
 }
 
+@media only screen and (max-width:768px) {
+  #blog h3 {
+    font-size: 1.7rem;
+  }
+
+  #blog h3::before {
+    height: 5rem;
+  }
+}
 
 /* ===================================================================
  *  15. Memories - (_layout.scss)
@@ -2456,7 +2534,7 @@ h3.newsletter-title {
 }
 
 #contact button.submitform {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: block;
   letter-spacing: .2rem;
   height: 6rem;
@@ -2481,7 +2559,7 @@ div.btn-aboutUs a {
 }
 
 button.aboutUs {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: block;
   letter-spacing: .2rem;
   height: 6rem;
@@ -2662,6 +2740,10 @@ a:visited {
     margin-right: 0;
     padding: 0;
   }
+
+  button.aboutUs {
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -2672,7 +2754,7 @@ a:visited {
 footer {
   margin: 0 0 5.4rem 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -2705,7 +2787,7 @@ h4.footer-h04 {
 }
 
 .footer-main ul {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-left: 0;
 }
 
@@ -2782,6 +2864,10 @@ h4.footer-h04 {
 
 .footer-bottom .copyright span {
   display: inline-block;
+}
+
+.footer-bottom .copyright span a {
+  color: #ffffff !important;
 }
 
 .footer-bottom .copyright span::after {
@@ -2912,6 +2998,20 @@ i.fa.fa-long-arrow-up {
     margin-left: -50px;
     margin-bottom: 0 !important;
   }
+
+  h3.h05 {
+    font-size: 1.7rem;
+  }
+
+  h4.footer-h04 {
+    font-size: 2rem;
+  }
+
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -2926,4 +3026,18 @@ i.fa.fa-long-arrow-up {
   .footer-bottom .copyright span::after {
     display: none;
   }
+
+  /* Card Blog */
+  .blog-slider__wrp.swiper-wrapper {
+    padding-bottom: 20px;
+  }
+
+  a.blog-anchor h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: left;
+    left: 20px;
+    position: absolute;
+  }
+
 }
