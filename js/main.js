@@ -1,8 +1,3 @@
-/* ===================================================================
- * Infinity - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function ($) {
   "use strict";
 
@@ -14,8 +9,6 @@
     },
     $WIN = $(window);
 
-  // Add the User Agent to the <html>
-  // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
   var doc = document.documentElement;
   doc.setAttribute("data-useragent", navigator.userAgent);
 
@@ -36,7 +29,7 @@
 
   /* Menu on Scrolldown
    * ------------------------------------------------------ */
-  /* var ssMenuOnScrolldown = function () {
+  var ssMenuOnScrolldown = function () {
     var menuTrigger = $("#header-menu-trigger");
 
     $WIN.on("scroll", function () {
@@ -46,7 +39,7 @@
         menuTrigger.removeClass("opaque");
       }
     });
-  }; */
+  };
 
   /* OffCanvas Menu
    * ------------------------------------------------------ */
@@ -111,20 +104,6 @@
 
           window.location.hash = target;
         });
-    });
-  };
-
-  /* Placeholder Plugin Settings
-   * ------------------------------------------------------ */
-  var ssPlaceholder = function () {
-    $("input, textarea, select").placeholder();
-  };
-
-  /* Alert Boxes
-  	------------------------------------------------------- */
-  var ssAlertBoxes = function () {
-    $(".alert-box").on("click", ".close", function () {
-      $(this).parent().fadeOut(500);
     });
   };
 
@@ -284,6 +263,7 @@
    * ------------------------------------------------------ */
   (function ssInit() {
     ssPreloader();
+    ssMenuOnScrolldown();
     ssOffCanvas();
     ssSmoothScroll();
     ssAnimations();
