@@ -209,9 +209,10 @@ a.blog-anchor {
 
 a.blog-anchor h2 {
     color: #ffffff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
     margin-top: 30px;
+    position: absolute;
 }
 
 /* Media queries */
@@ -231,6 +232,17 @@ a.blog-anchor h2 {
         max-width: 680px;
         height: 400px;
     }
+
+    .blog-slider__title {
+        font-size: 3rem !important;
+    }
+
+    a.blog-anchor.effect {
+        color: #ffffff;
+        text-decoration: none;
+        position: absolute !important;
+        left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -242,9 +254,12 @@ a.blog-anchor h2 {
     .blog-slider__text {
         padding: 0 20px;
     }
-}
 
-@media screen and (max-width: 768px) {
+    .blog-slider__title {
+        font-size: 2.5rem !important;
+        line-height: 2.5rem;
+    }
+
     .blog-slider__pagination {
         transform: translateX(-50%);
         left: 50% !important;
@@ -254,9 +269,7 @@ a.blog-anchor h2 {
         justify-content: center;
         align-items: center;
     }
-}
 
-@media screen and (max-width: 768px) {
     .blog-slider {
         min-height: 500px;
         height: auto;
@@ -270,32 +283,48 @@ a.blog-anchor h2 {
     .blog-slider__item.swiper-slide-active {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 768px) {
     .blog-slider__img {
         transform: translateY(-50%);
         width: 90% !important;
     }
-}
 
-@media screen and (max-width: 768px) {
     .blog-slider__content {
         margin-top: -80px;
         text-align: center;
         padding: 0 30px;
     }
-}
 
-@media screen and (max-width: 768px) {
     .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 0 5px;
     }
+
+    a.blog-anchor h2 {
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 40px;
+        position: absolute;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
     .blog-slider__img {
         width: 95%;
+    }
+
+    .blog-slider__title {
+        font-size: 1.7rem !important;
+        line-height: 2.5rem;
+    }
+
+    a.blog-anchor h2 {
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 20px;
+        position: absolute;
     }
 }
 

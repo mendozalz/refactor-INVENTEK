@@ -807,9 +807,10 @@ a#return {
     padding: 0;
   }
 
+
 }
 
-/* small mobile :320px. */
+/*******************/
 
 @media (max-width: 767px) {
 
@@ -952,6 +953,15 @@ a#return {
 
   .footer-content {
     margin-bottom: 30px;
+  }
+
+  h3.h05 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  h4.footer-h04 {
+    font-weight: bold;
   }
 
   .header-bottom h1 {

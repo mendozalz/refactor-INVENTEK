@@ -34,85 +34,9 @@
     });
   };
 
-  /* FitVids
-	------------------------------------------------------ */
-  var ssFitVids = function () {
-    $(".fluid-video-wrapper").fitVids();
-  };
-
-  /*	Masonry
-	------------------------------------------------------ */
-  var ssMasonryFolio = function () {
-    var containerBricks = $(".bricks-wrapper");
-
-    containerBricks.imagesLoaded(function () {
-      containerBricks.masonry({
-        itemSelector: ".brick",
-        resize: true,
-      });
-    });
-  };
-
-  /*	Light Gallery
-	------------------------------------------------------- */
-  var ssLightGallery = function () {
-    $("#folio-wrap").lightGallery({
-      showThumbByDefault: false,
-      hash: false,
-      selector: ".item-wrap",
-    });
-  };
-
-  /* Flexslider
-   * ------------------------------------------------------ */
-  var ssFlexSlider = function () {
-    $WIN.on("load", function () {
-      $("#testimonial-slider").flexslider({
-        namespace: "flex-",
-        controlsContainer: "",
-        animation: "slide",
-        controlNav: true,
-        directionNav: false,
-        smoothHeight: true,
-        slideshowSpeed: 7000,
-        animationSpeed: 600,
-        randomize: false,
-        touch: true,
-      });
-    });
-  };
-
-  /* Carousel
-   * ------------------------------------------------------ */
-  var ssOwlCarousel = function () {
-    $(".owl-carousel").owlCarousel({
-      nav: false,
-      loop: true,
-      margin: 50,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 2,
-          margin: 20,
-        },
-        400: {
-          items: 3,
-          margin: 30,
-        },
-        600: {
-          items: 4,
-          margin: 40,
-        },
-        1000: {
-          items: 6,
-        },
-      },
-    });
-  };
-
   /* Menu on Scrolldown
    * ------------------------------------------------------ */
-  var ssMenuOnScrolldown = function () {
+  /* var ssMenuOnScrolldown = function () {
     var menuTrigger = $("#header-menu-trigger");
 
     $WIN.on("scroll", function () {
@@ -122,7 +46,7 @@
         menuTrigger.removeClass("opaque");
       }
     });
-  };
+  }; */
 
   /* OffCanvas Menu
    * ------------------------------------------------------ */
@@ -360,16 +284,8 @@
    * ------------------------------------------------------ */
   (function ssInit() {
     ssPreloader();
-    ssFitVids();
-    ssMasonryFolio();
-    ssLightGallery();
-    ssFlexSlider();
-    ssOwlCarousel();
-    ssMenuOnScrolldown();
     ssOffCanvas();
     ssSmoothScroll();
-    ssPlaceholder();
-    ssAlertBoxes();
     ssAnimations();
     ssIntroAnimation();
     ssContactForm();
@@ -377,21 +293,3 @@
     ssBackToTop();
   })();
 })(jQuery);
-
-/* SLIDER */
-
-const slider = document.querySelector(".slider");
-
-function activate(e) {
-  const items = document.querySelectorAll(".item");
-  e.target.matches(".next") && slider.append(items[0]);
-  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
-}
-
-document.addEventListener("click", activate, true);
-
-/* document.addEventListener("DOMContentLoaded", () => {
-  setInterval(() => {
-    document.querySelector(".next").click();
-  }, 5000);
-}); */

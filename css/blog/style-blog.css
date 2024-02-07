@@ -1,14 +1,10 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    overflow: hidden;
-}
-
 #overlay {
     opacity: .5;
     background-color: #19191b;
+}
+
+#header-blog {
+    position: relative;
 }
 
 .title {
@@ -36,15 +32,6 @@ body {
     color: #ffffff;
 }
 
-.snap-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-.snap-item {
-    scroll-snap-align: start;
-}
 
 .blog-main {
     background-repeat: no-repeat;
@@ -210,11 +197,19 @@ a#return {
     }
 
     #blog .lead {
-        font-size: 3.6rem;
+        font-size: 1.5rem;
     }
+
+    #return {
+        position: absolute;
+        right: 15px;
+        top: 40px;
+    }
+
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #blog h3 {
         font-size: 1.7rem;
     }
@@ -231,6 +226,14 @@ a#return {
         font-size: 1.5rem;
     }
 
+    .title h1 {
+        font-size: 1.7rem;
+    }
+
+    .title h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -244,7 +247,7 @@ a#return {
 
     #blog .lead {
         margin-top: 4.8rem;
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -254,7 +257,7 @@ a#return {
     }
 
     #blog .lead {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -268,6 +271,6 @@ a#return {
     }
 
     #blog .lead {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
 }
