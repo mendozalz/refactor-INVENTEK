@@ -2,9 +2,11 @@
 
 | Antes                                                               | Después                                                               |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [![old_inventek](url_del_thumbnail_antes)](public/old_inventek.gif) | [![new_inventek](url_del_thumbnail_después)](public/new_inventek.mp4) |
+| <img src="https://github.com/mendozalz/refactor-INVENTEK/blob/main/public/old_inventek.gif?raw=true" alt="Viejo diseño de la web INVENTEK]" />  | <img src="https://github.com/mendozalz/refactor-INVENTEK/blob/main/public/new_inventek.gif?raw=true" alt="Nuevo diseño de la web INVENTEK" />> |
 
 Ver en [Vercel](https://mendozalz.vercel.app/)
+
+
 
 ## 🚀 Refactor Web INVENTEK
 
