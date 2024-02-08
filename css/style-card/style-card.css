@@ -12,13 +12,13 @@
 
 
 .card {
-    height: 400px;
+    height: 300px;
     width: auto;
     cursor: pointer;
     position: relative;
-    padding: 4vw;
+    padding: 2vw;
     overflow: hidden;
-
+    user-select: none;
 }
 
 .card__img-wrap,

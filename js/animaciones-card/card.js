@@ -261,12 +261,11 @@ export class Card {
       );
     });
   }
-
   /* Inicializa el listener solo para mouseEnter mas no en tablet y movil */
 
   initEvents() {
     // Solo agregar event listeners si el ancho de la pantalla es mayor que 768px (típicamente el ancho de una pantalla de tableta)
-    if (window.matchMedia("(min-width: 768px)").matches) {
+    if (window.matchMedia("(min-width: 900px)").matches) {
       this.onMouseenterFn = () => this.mouseEnter();
       this.onMouseleaveFn = () => this.mouseLeave();
 

@@ -1720,7 +1720,7 @@ a.scroll-icon.smoothscroll.effect {
  * ------------------------------------------------------------------- */
 #services {
   background-color: #19191b;
-  background-image: url(../images/inventek/backGround_INVENTEK_1920*1280.jpg);
+  /* background-image: url(../images/inventek/backGround_INVENTEK_1920*1280.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -1728,8 +1728,8 @@ a.scroll-icon.smoothscroll.effect {
   background-size: cover;
   min-height: 800px;
   position: relative;
-  padding: 4.2rem 10rem 4.2rem;
-  min-height: 696px;
+  padding: 4rem 10rem 4rem;
+  min-height: 100vh;
 }
 
 #services .overlay {
