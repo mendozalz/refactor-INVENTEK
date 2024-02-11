@@ -10,9 +10,8 @@ function activate(e) {
 
 document.addEventListener("click", activate, true);
 
-/* document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     document.querySelector(".next").click();
   }, 9000);
 });
- */
