@@ -36,7 +36,10 @@ html {
 html,
 body {
   height: 100%;
+  scrollbar-color: #3EC1D5 #000000;
+  scrollbar-width: thin;
 }
+
 
 body {
   background: #111111;
@@ -991,6 +994,29 @@ header .header-logo a img {
   -webkit-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+/* ------------------------------------------------------------------- 
+ * language trigger - (_layout.css) 
+ * ------------------------------------------------------------------- */
+#header-menu-trigger-language {
+  display: block;
+  position: fixed;
+  right: 32px;
+  top: 80px;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  font-family: 'Raleway', sans-serif, sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: rgb(255, 255, 255);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* ------------------------------------------------------------------- 
