@@ -152,7 +152,7 @@ input.check-toggle-round-flat:checked+label:after {
         position: absolute;
         display: inline-block;
         left: 28%;
-        top: 62%;
+        top: 60%;
     }
 }
 
