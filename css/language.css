@@ -149,10 +149,10 @@ input.check-toggle-round-flat:checked+label:after {
     }
 
     .mobile {
-        position: absolute;
+        position: relative;
         display: inline-block;
-        left: 28%;
-        top: 60%;
+        left: 20%;
+        top: 3%;
     }
 }
 
@@ -276,13 +276,4 @@ input.check-toggle-round-flat:checked+label {}
 
 input.check-toggle-round-flat:checked+label:after {
     margin-left: 44px;
-}
-
-@media only screen and (max-width:400px) {
-    .mobile {
-        position: absolute;
-        display: inline-block;
-        left: 28%;
-        top: 55%;
-    }
 }
