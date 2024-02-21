@@ -18,16 +18,16 @@
 
     <!-- CSS
 			================================================== -->
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/vendor.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/blog/style-blog.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/language.css">
 
     <!-- script
 				================================================== -->
-    <script src="js/pace.min.js"></script>
+    <script src="../js/pace.min.js"></script>
     <script src="https://kit.fontawesome.com/1a4ceee562.js" crossorigin="anonymous"></script>
 
     <!-- favicons
@@ -35,35 +35,76 @@
     <link rel="shortcut icon" href="/images/inventek/imagotipo.ico" type="image/x-icon">
     <link rel="icon" href="/images/inventek/imagotipo.ico" type="image/x-icon">
 
-    <title>TECHNOLOGY AND INNOVATION</title>
+    <title>Boletin informativo</title>
 </head>
 
-<body class="snap" id="top">
+<body id="top">
     <!-- effectMouse -->
     <div id="effectMouse"></div>
 
-
     <!-- header 
-                                ================================================== -->
+						================================================== -->
     <header>
+
         <div class="header-logo">
             <!-- <a href="index.html">Infinity</a> -->
-            <a href="/">
-                <img class="effect" src="/images/inventek/logotipo.png" alt="logotipo inventek">
+            <a href="/es">
+                <img class="effect" src="../images/inventek/logotipo.png" alt="logotipo inventek">
             </a>
         </div>
-        <a id="return" href="/" class="effect">
-            <i class="fa-solid fa-arrow-left effect"></i>
-            <span class="header-menu-text effect">Back</span>
+
+        <a id="header-menu-trigger" class="effect" href="#0">
+            <span class="header-menu-text effect">Menu</span>
+            <span class="header-menu-icon effect"></span>
         </a>
+
+        <nav id="menu-nav-wrap">
+
+            <a href="#" class="close-button effect" title="close"><span>Close</span></a>
+
+            <h3>INVENTEK</h3>
+
+            <ul class="nav-list">
+                <li class="current effect"><a href="/es">Inicio</a></li>
+                <li><a class="effect" href="/es/about.html">Acerca de</a></li>
+                <li><a class="effect" href="/es/bots.html">Nuestros Bots</a></li>
+                <li><a class="effect" href="/es/archive-blog.html">Novedades y Articulos</a></li>
+                <li><a class="effect" href="/es/contact.html">Contacto</a></li>
+            </ul>
+
+            <ul class="header-social-list">
+                <li>
+                    <a href="https://www.facebook.com/empresa.delfuturo/" target="_blank"><i
+                            class="fa-brands fa-square-facebook effect"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-youtube effect"></i></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/drjmarulanda/" target="_blank"><i
+                            class="fa-brands fa-instagram effect"></i></a>
+                </li>
+            </ul>
+            <div class="mobile">
+                <input class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">ES</span>
+                <a class="languaje-ancle effect" href="/"><span class="off">EN</span></a>
+            </div>
+
+        </nav> <!-- end #menu-nav-wrap -->
+
     </header> <!-- end header -->
+    </header> <!-- end header -->
+
+
     <!-- hero
-           ================================================== -->
-    <main class="blog-main" style="background-image:url('/images/blog/tecnologia_e_innovacion.jpg')">
+   ================================================== -->
+    <main id="about-hero">
         <div id="overlay" class="overlay"></div>
         <div class="title">
-            <h1>TECHNOLOGY AND INNOVATION</h1>
-            <h2>1 January 2020 | Dr. Jaime Marulanda, Phd</h2>
+            <h1>Boletin informativo</h1>
+            <h2>Inventek Grupo de inversión, Inc.</h2>
         </div>
         <ul class="home-social-list">
             <li class="animate-intro">
@@ -78,48 +119,57 @@
                         class="fa-brands fa-instagram effect"></i></a>
             </li>
         </ul> <!-- end home-social-list -->
+
         <div class="scrolldown">
-            <a href="#blog" class="scroll-icon smoothscroll effect">
-                Scroll Down
+            <a href="#newsletter" class="scroll-icon smoothscroll effect">
+                Hacia abajo
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
         </div>
     </main>
     <!-- end hero -->
-    <!-- blog
-           ================================================== -->
-    <section id="blog">
-        <div class="row blog-wrap">
-            <div class="col-full">
-                <div class="intro">
-                    <h3 id="title-h3" class="animate-this">TECHNOLOGY AND INNOVATION</h3>
-                    <h4 id="sub-title-h4" class="animate-this">1 January 2020 | Dr. Jaime Marulanda</h4>
-                    <p id="lead-parrafo" class="lead animate-this">
-                        Welcome to Inventek Investment Group, your trusted partner in automated trading. We are
-                        dedicated to empowering traders and investors with advanced trading bots that leverage
-                        technology to enhance your trading experience and potential profitability.
-                        At Inventek Investment Group, we believe that technology can revolutionize how traders and
-                        investors operate in financial markets. Our vision is to provide everyone with intelligent,
-                        reliable, and user-friendly trading bots that execute trades with precision, efficiency, and
-                        discipline. We strive to empower investors of all skill levels to make informed decisions
-                        and
-                        achieve their financial goals through automated trading, thus increasing consistency and
-                        profitability.</p>
-                </div>
-            </div> <!-- end col-full  -->
-        </div> <!-- end blog-wrap  -->
-    </section> <!-- end blog -->
+
+
+    <!-- about
+   ================================================== -->
+    <!-- Newsletter
+   ================================================== -->
+    <section id="newsletter">
+
+        <div class="subscribe-form">
+
+            <h3 class="newsletter-title">Suscríbete a nuestro boletín mensual</h3>
+            <p class="newsletter-p">Proporcionamos a clientes e inversores un boletín mensual donde revisamos nuestra
+                posiciones, noticias de actualidad,
+                y perspectivas del mercado.
+
+            </p>
+
+            <form id="newsletter-form" class="group" novalidate="true">
+
+                <input type="email" class="email" id="mc-email" placeholder="Email" required="">
+
+                <button class="effect">Suscríbete</button>
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <!-- end newsletter -->
 
     <!-- footer
-           ================================================== -->
+   ================================================== -->
     <footer>
         <div class="footer-main">
             <div class="row">
                 <div class="col-five tab-full footer-blog">
-                    <h3 class="h05">Inventek Investment <br><span>Group, Inc.</span></h3>
+                    <h3 class="h05">Inventek Grupo<br><span>de Inversión, Inc.</span></h3>
                 </div> <!-- end footer-blog -->
                 <div class="col-three tab-full footer-social">
-                    <h4 class="footer-h04">Follow Us.</h4>
+                    <h4 class="footer-h04">Siguenos en.</h4>
                     <ul class="footer-social-list">
                         <li class="animate-intro">
                             <a href="https://www.facebook.com/empresa.delfuturo/" target="_blank"><i
@@ -132,12 +182,6 @@
                             <a href="https://www.instagram.com/drjmarulanda/" target="_blank"><i
                                     class="fa-brands fa-instagram effect"></i></a>
                         </li>
-                        <li class="animate-intro">
-                            <a href="#"><i class="">&nbsp;</i></a>
-                        </li>
-                        <li class="animate-intro">
-                            <a href="#"><i class="">&nbsp;</i></a>
-                        </li>
                     </ul> <!-- end home-social-list -->
                 </div> <!-- end footer-social -->
             </div> <!-- end row -->
@@ -146,8 +190,8 @@
             <div class="row">
                 <div class="col-twelve">
                     <div class="copyright">
-                        <span>© Copyright INVENTEK 2024.</span>
-                        <span>Design by <a class="effect" href="https://mendozalz.vercel.app/"
+                        <span>© Derechos de autor INVENTEK 2024.</span>
+                        <span>Diseñado por <a class="effect" href="https://mendozalz.vercel.app/"
                                 target="_blank">mendozalz</a></span>
                     </div>
                 </div>
@@ -155,7 +199,7 @@
         </div> <!-- end footer-bottom -->
         <div id="go-top">
             <a class="smoothscroll" title="Back to Top" href="#top">
-                <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                <i class="fa fa-long-arrow-up effect" aria-hidden="true"></i>
             </a>
         </div>
     </footer>
@@ -164,27 +208,18 @@
         <div id="loader"></div>
     </div>
 
-    <!-- gsap scrool locomotive	================================================== -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-
-
     <!-- Java Script
    ================================================== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Mouse Animaciones
    ================================================== -->
 
-    <script src="/js/cursor.js" defer></script>
+    <script src="../js/cursor.js" defer></script>
 
 </body>
 
